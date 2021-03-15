@@ -1,9 +1,10 @@
 import React from "react";
-import logo from "../icon2.png";
+import logo from "../resources/icon2.png";
+import Resume from "../resources/Resume.pdf"
 // REACT fontawesome import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars } from "@fortawesome/free-solid-svg-icons"
-
+//In react we can style within the tags
 const NavBar = () => {
   return (
     <nav class="navbar navbar-expand-lg navbar-light bg-dark">
@@ -20,7 +21,7 @@ const NavBar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <FontAwesomeIcon icon={faBars} style={{ color: '#fff' }}/>
+          <FontAwesomeIcon icon={faBars} style={{ color: "#fff" }} />
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,22 +33,32 @@ const NavBar = () => {
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                about me
+                About Me
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                projects
+                Experience
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                experience
+                Projects
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                contacts
+                Contact
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-linkres" href={Resume} target="_blank">
+                <button
+                  type="button"
+                  class="btn btn-outline-light resume-btn-nav"
+                >
+                  Résumé
+                </button>
               </a>
             </li>
           </ul>
