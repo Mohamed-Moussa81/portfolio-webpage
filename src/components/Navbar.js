@@ -3,6 +3,7 @@ import logo from "../resources/icon2.png";
 import Resume from "../resources/Resume.pdf"
 // REACT fontawesome import
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+//faBars is the Menu Icon
 import { faBars } from "@fortawesome/free-solid-svg-icons"
 //In react we can style within the tags
 const NavBar = () => {

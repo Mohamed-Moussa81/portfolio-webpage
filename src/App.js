@@ -4,12 +4,18 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from './components/Navbar.js';
 import Header from "./components/Header.js";
 import AboutMe from "./components/AboutMe";
+import Services from "./components/Services"
+import Experience from "./components/Experience"
+import Portfolio from "./components/Portfolio"
 function App() {
   return (
     <>
       <Navbar></Navbar>
       <Header></Header>
       <AboutMe></AboutMe>
+      <Services></Services>
+      <Experience></Experience>
+      <Portfolio></Portfolio>
     </>
   );
 }

@@ -4,7 +4,7 @@ import Typed from "react-typed"
     return (
       <div className="header-wrapper">
         <div className="main-info">
-
+       
             <Typed
               className="typed-text"
               strings={["Mohamed Moussa", "Software Engineer","Web Developer", "Team Player"]}
