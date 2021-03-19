@@ -6,7 +6,7 @@ import {
   faLaptopCode,} from "@fortawesome/free-solid-svg-icons";
 const Services = () => {
   return (
-    <div className="services">
+    <div className="services" id="skills">
       <h1 className="py-5"> Skills </h1>
       <div className="container">
         <div className="row">
@@ -72,7 +72,7 @@ const Services = () => {
             </ul>
           </div>
           <div class="col-md-4 list">
-            <h3> Software</h3>
+            <h3>Software</h3>
             <ul>
               <li>AWS</li>
               <li>GIT</li>
