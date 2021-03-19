@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap');
 :root {
   --primary-white: #fff;
   --primary-light-grey: #f4f4f4;
@@ -21,8 +21,7 @@ body{
 /* Boot strap uses rem instead of pixel thus we have to convert*/
 .logo {
   width:3rem;
-   margin-right: 0.75rem;
-  margin-left: 0.75rem;
+   margin-left:-25rem;
 }
 
 
@@ -200,6 +199,8 @@ height:6.25rem;
 .list h3 {
   font-weight: 500;
   font-size: 1.5rem;
+  text-align: center;
+  padding-right: 3rem;
 }
 
 .list ul {
@@ -208,9 +209,10 @@ height:6.25rem;
   padding-left: 0px;
 }
 
-.list ul li{
+.list  li{
   font-weight: 300;
 }
+
 
 
 /************Experience **************/
@@ -296,18 +298,24 @@ height:6.25rem;
 
 /**********************************Portfolio*/
 .portfolio-wrapper{
-  background: var(--primary-light-grey);
+  background: lightgrey;
   padding: 3rem 0;
 }
 
+.portfolio-wrapper h1{
+  color: var(--primary-orange);
+}
+
 .portfolio-image{
-  width: 15rem;
+  width: 12rem;
+  height: 8rem;
   border: 1px solid var(--primary-orange);
   padding: 0 0.5rem;
+  
 }
 
 .portfolio-image-box{
-  position:relative;
+  position: relative;
   margin: 1rem;
 }
 
@@ -316,7 +324,7 @@ height:6.25rem;
   opacity: 0;
   background: var(--primary-black);
   width: 15rem;
-  height: 8 rem;
+  height: 8rem;
   top: 0;
   border: 1px solid var(--primary-red);
   cursor: pointer;
@@ -330,7 +338,7 @@ height:6.25rem;
 .portfolio-icon{
   position: absolute;
   opacity:0;
-  margin-left: 3rem;
+  margin-left: -8rem;
   margin-top: 3.6rem;
   color: var(--primary-orange);
   font-size: 1.5rem;
@@ -340,4 +348,175 @@ height:6.25rem;
   opacity: 70%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+
+/****************************OVERFLOW BOX**************************/
+
+.portfolio-image-popupbox{
+  width: 45rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link{
+  cursor: pointer;
+  color: var(--primary-orange);
+}
+.hyper-link:hover{
+  color:var(--primary-red);
+  text-decoration: none;
+}
+/**************Media for Projects**********/
+@media(max-width: 768px){
+  .portfolio-image-popupbox{
+    width: 100%;
+  }
+
+}
+@media(max-height: 570px){
+.popupbox-wrapper{
+  height:100% !important;
+}
+
+  .portfolio-image-popupbox{
+    width: 50%;
+  }
+  
+}
+@media(max-height: 280px){
+  .popupbox-wrapper{
+    height: 90%;
+  }
+  .portfolio-image-popupbox{
+    width:30%;
+  }
+}
+/*********************TIMELINE**********************/
+
+.timeline {
+  background: #3da3d5;
+  font-size: 16px;
+  color: var(--primary-black);
+}
+
+.title {
+  font-size: 3em;
+  text-align: center; 
+  font-family: 'Bebas Neue', sans-serif;
+
+}
+
+.titleLink{
+  text-decoration: none !important;
+ color: var(--primary-black);
+}
+
+.titleLink:hover{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+.title-description{
+  margin-top: 0;
+  margin-bottom: 1 rem;
+  display: block;
+  text-align: center;
+}
+
+.vertical-timeline-element-title{
+  padding-top: 0.25em;
+}
+
+.vertical-timeline-element-content{
+  box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.25), 0 0.4em 1.25em 0 rgba(0,0,0,0.15) !important;
+  padding: 2em 3em !important;
+
+}
+
+.date{
+  color: rgb(201,251,255);
+}
+
+#description{
+  margin: 1.5em 0 2em 0;
+}
+
+.button{
+  text-decoration: none  !important;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white  !important;
+}
+
+.workButton{
+  background-color: #06d6a0;
+}
+
+.workButton:hover{
+  background-color: #0ac593 ;
+}
+.schoolButton{
+  background-color: #f9c74f;
+}
+
+.schoolButton:hover{
+  background-color: #f3bc3c;
+}
+
+@media only screen and (max-width: 1700px){
+  .vertical-timeline-element-date{
+    display: block  !important;
+    float: none !important;
+    color: rgb(44,44,44);
+    margin-top: 1.5em;
+  }
+}
+
+.resume {
+  text-decoration: none;
+  color: var(--primary-black);
+}
+.resume:hover{
+  text-decoration: none;
+  color:#f9ab00;
+}
+
+
+
+/**************************************Contacts*******************************/
+.contacts{
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+.contacts h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  padding: 1.3rem 0;
+}
+
+.contacts p {
+  color: var(--primary-light-grey);
+  font-size: 1.2rem;
+}
+
+/**************************************Footer*******************************/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a{
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+ 
+}
+.footer a:hover{
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p{
+  margin: 0;
 }

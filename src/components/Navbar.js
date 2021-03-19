@@ -5,10 +5,11 @@ import Resume from "../resources/Resume.pdf"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 //faBars is the Menu Icon
 import { faBars } from "@fortawesome/free-solid-svg-icons"
+import { Link } from 'react-scroll';
 //In react we can style within the tags
 const NavBar = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
       <div className="container">
         <a class="navbar-brand" href="#">
           <img className="logo" src={logo} alt="logo..."></img>{" "}
@@ -28,29 +29,34 @@ const NavBar = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">
+              <Link smooth={true} to="home" class="nav-link" href="#">
                 Home <span class="sr-only">(current)</span>
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <Link smooth={true} to="about" class="nav-link" href="#">
                 About Me
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <Link smooth={true} to="skills" class="nav-link" href="#">
+                Skills
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link smooth={true} to="experience" class="nav-link" href="#">
                 Experience
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <Link smooth={true} to="projects" class="nav-link" href="#">
                 Projects
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <Link smooth={true} to="contact" class="nav-link" href="#">
                 Contact
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
               <a class="nav-linkres" href={Resume} target="_blank">
