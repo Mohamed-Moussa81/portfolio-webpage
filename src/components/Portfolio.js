@@ -15,13 +15,24 @@ const Portfolio = () => {
   const openPopupboxEcommerce = () => {
     const content = (
       <>
-        <img className="portfolio-image-popupbox" src={Ecommerce} alt=""/>
-          <p>Incididunt reprehenderit ea dolore duis culpa offon.</p>
-          <b> Github:</b>{" "}
-          <a className="hyper-link"
-            onClick= {() => window.open("https://google.com","_blank")}> https://google.com
-          </a>
-        
+        <img className="portfolio-image-popupbox" src={Ecommerce} alt="" />
+        <p>
+          E-commerce application that simplfies the process of purchasing and
+          selling used products for college students.{" "}
+        </p>
+        <b> Bitbucket:</b>{" "}
+        <a
+          className="hyper-link"
+          onClick={() =>
+            window.open(
+              "https://jira.cs.rutgers.edu:8445/projects/CM/repos/college-marketplace/browse",
+              "_blank"
+            )
+          }
+        >
+          {" "}
+          https://jira.cs.rutgers.edu:8445/projects/CM/repos/college-marketplace/browse
+        </a>
       </>
     );
     PopupboxManager.open({ content })
@@ -30,7 +41,7 @@ const Portfolio = () => {
       config: {
         titleBar: {
           enable: true,
-          text: "Ecommerce project.",
+          text: "Ecommerce project",
         },
         fadeIn: true,
         fadeInSpeed: 500,
@@ -51,14 +62,22 @@ const Portfolio = () => {
      const content = (
        <>
          <img className="portfolio-image-popupbox" src={NikeBot} alt="" />
-         <p>Incididunt reprehenderit ea dolore duis culpa offon.</p>
+         <p>
+           Nike Selenium Bot that scrapes data and purchases limited edition
+           items from Nike website
+         </p>
          <b> Github:</b>{" "}
          <a
            className="hyper-link"
-           onClick={() => window.open("https://google.com","_blank")}
+           onClick={() =>
+             window.open(
+               "https://github.com/Mohamed-Moussa81/Nike-Sneaker",
+               "_blank"
+             )
+           }
          >
            {" "}
-           https://google.com
+           https://github.com/Mohamed-Moussa81/Nike-Sneaker
          </a>
        </>
      );
@@ -68,7 +87,7 @@ const Portfolio = () => {
        config: {
          titleBar: {
            enable: true,
-           text: "Nike project.",
+           text: "NikeBot",
          },
          fadeIn: true,
          fadeInSpeed: 500,
@@ -81,14 +100,22 @@ const Portfolio = () => {
      const content = (
        <>
          <img className="portfolio-image-popupbox" src={Railroad} alt="" />
-         <p>Incididunt reprehenderit ea dolore duis culpa offon.</p>
+         <p>
+           Railway Booking system that allows customers to browse train
+           schedules and reserve available train reservations
+         </p>
          <b> Github:</b>{" "}
          <a
            className="hyper-link"
-           onClick={() => window.open("https://google.com", "_blank")}
+           onClick={() =>
+             window.open(
+               "https://github.com/tanaysomisetty/railway-booking-system",
+               "_blank"
+             )
+           }
          >
            {" "}
-           https://google.com
+           https://github.com/tanaysomisetty/railway-booking-system
          </a>
        </>
      );
@@ -111,14 +138,22 @@ const Portfolio = () => {
     const content = (
       <>
         <img className="portfolio-image-popupbox" src={Museum} alt="" />
-        <p>Incididunt reprehenderit ea dolore duis culpa offon.</p>
+        <p>
+          Android application that provides users with the option to select
+          Museums nearby and purchase tickets.
+        </p>
         <b> Github:</b>{" "}
         <a
           className="hyper-link"
-          onClick={() => window.open("https://google.com", "_blank")}
+          onClick={() =>
+            window.open(
+              "https://github.com/Mohamed-Moussa81/Android-Museum-Project",
+              "_blank"
+            )
+          }
         >
           {" "}
-          https://google.com
+          https://github.com/Mohamed-Moussa81/Android-Museum-Project
         </a>
       </>
     );
@@ -141,14 +176,19 @@ const Portfolio = () => {
     const content = (
       <>
         <img className="portfolio-image-popupbox" src={Spaceinvaders} alt="" />
-        <p>Incididunt reprehenderit ea dolore duis culpa offon.</p>
+        <p>Space Invaders 2d game implemented using Pygame Framework</p>
         <b> Github:</b>{" "}
         <a
           className="hyper-link"
-          onClick={() => window.open("https://google.com", "_blank")}
+          onClick={() =>
+            window.open(
+              "https://github.com/Mohamed-Moussa81/Space-Invaders",
+              "_blank"
+            )
+          }
         >
           {" "}
-          https://google.com
+          https://github.com/Mohamed-Moussa81/Space-Invaders
         </a>
       </>
     );
@@ -176,35 +216,35 @@ const Portfolio = () => {
         <h1 className="test-uppercase text-center py-5">Projects</h1>
         <div className="image-box-wrapper row justify-content-center">
           <div className="portfolio-image-box" onClick = {openPopupboxEcommerce}>
-            {/* Import project images*/}
+
             <img className="portfolio-image" src={Ecommerce} alt="" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
 
           <div className="portfolio-image-box" onClick = {openPopupboxNikeBot}>
-            {/* Import project images*/}
+
             <img className="portfolio-image" src={NikeBot} alt="" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
 
           <div className="portfolio-image-box" onClick = {openPopupboxRailroad}>
-            {/* Import project images*/}
+ 
             <img className="portfolio-image" src={Railroad} alt="" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
 
           <div className="portfolio-image-box" onClick = {openPopupboxMuseum}>
-            {/* Import project images*/}
+  
             <img className="portfolio-image" src={Museum} alt="" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
           </div>
 
           <div className="portfolio-image-box" onClick = {openPopupboxSpaceInvaders}>
-            {/* Import project images*/}
+   
             <img className="portfolio-image" src={Spaceinvaders} alt="" />
             <div className="overflow"></div>
             <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />

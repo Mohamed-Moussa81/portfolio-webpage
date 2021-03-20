@@ -402,6 +402,8 @@ height:6.25rem;
   font-size: 3em;
   text-align: center; 
   font-family: 'Bebas Neue', sans-serif;
+  padding-top: 3rem  !important;
+  padding-bottom: 3rem  !important;
 
 }
 
