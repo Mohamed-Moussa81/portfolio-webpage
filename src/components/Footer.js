@@ -25,18 +25,18 @@ function Footer() {
                 </Link>
                 <br />
 
-                <Link smooth={true} to="about" href="#">
+                <Link smooth={true} to="about" offset={-20} href="#">
                   About Me
                 </Link>
                 <br />
-                <Link smooth={true} to="skills" href="#">
+                <Link smooth={true} to="skills" offset={-100} href="#">
                   Skills
                 </Link>
                 <br />
               </div>
 
               <div className="col">
-                <Link smooth={true} to="experience" href="#">
+                <Link smooth={true} to="experience" offset={-60}  href="#">
                   Experience
                 </Link>
                 <br />
@@ -58,7 +58,11 @@ function Footer() {
                 <FontAwesomeIcon className="mx-3" icon={faEnvelope} size="2x" />
               </a>
               <a href="https://www.instagram.com/mohamedmoussa__/">
-                <FontAwesomeIcon className="mx-3" icon={faInstagram} size="2x" />
+                <FontAwesomeIcon
+                  className="mx-3"
+                  icon={faInstagram}
+                  size="2x"
+                />
               </a>
             </div>
             <p className="pt-3 text-center">
